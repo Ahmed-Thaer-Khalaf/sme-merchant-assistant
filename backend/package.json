@@ -1,0 +1,16 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "module": "src/server.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "db:init": "bun run src/db/schema.ts",
+    "start": "bun run src/server.ts",
+    "dev": "bun run --watch src/server.ts"
+  },
+  "dependencies": {
+    "@google/genai": "^2.24.0",
+    "@typesafe-ai/sdk": "^0.6.0"
+  }
+}
